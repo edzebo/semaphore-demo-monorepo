@@ -14,12 +14,6 @@ blocks:
             - sem-version node 12
             - npm install
             - cache store
-            - npm run build --if-present
-  - name: 'Block #2'
-    task:
-      jobs:
-        - name: 'Job #1'
-          commands: []
 after_pipeline:
   task:
     jobs:
